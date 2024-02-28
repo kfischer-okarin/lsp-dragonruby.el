@@ -1,0 +1,3 @@
+[submodule "dragonruby-lsp-bridge"]
+	path = dragonruby-lsp-bridge
+	url = git@github.com:kfischer-okarin/dragonruby-lsp-bridge.git
