@@ -32,7 +32,7 @@
            (eq major-mode 'enh-ruby-mode))))
 
 (setq lsp-dragonruby--bridge-path
-      (expand-file-name "dragonruby-lsp-bridge" load-file-name))
+      (expand-file-name "dragonruby-lsp-bridge" (file-name-directory load-file-name)))
 
 (lsp-register-client
  (make-lsp-client :new-connection (lsp-stdio-connection `("node" ,lsp-dragonruby--bridge-path))
